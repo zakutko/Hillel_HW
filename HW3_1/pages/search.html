@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+        <link rel="stylesheet" type="text/css" href="../static/css/form.css">
+        <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+        <title>Homework3_1_search</title>
+    </head>
+    <body>
+        <nav>
+            <a class="btn" href="../index.html">Home</a>
+            <a class="btn" href="registration.html">Registration</a>
+            <a class="btn" href="authorization.html">Authorization</a>
+            <a class="btn" href="search.html">Search</a>
+        </nav>
+
+        <main>
+            <div class="signFrm">
+                <form action="https://fom.in.ua/echo" method="post" class="form">
+                    <h2>Search</h2>
+
+                    <h3>Основные характеристики:</h3>
+                    <div class="inputContainer">
+                        <select name="type_car_body" class="input">
+                            <option value="option0">...</option>
+                            <option value="option1">Кроссовер</option>
+                            <option value="option2">Внедорожник</option>
+                            <option value="option3">Пикап</option>
+                            <option value="option4">Седан</option>
+                            <option value="option5">Хетчбэк</option>
+                            <option value="option6">Минивен</option>
+                        </select>
+                        <label class="label" for="type_car_body">Тип кузова:</label>
+                    </div>
+
+                    <div class="inputContainer">
+                        <select name="brand" class="input">
+                            <option value="option0">...</option>
+                            <option value="option1">BMW</option>
+                            <option value="option2">Mercedes</option>
+                            <option value="option3">Mazda</option>
+                            <option value="option4">Skoda</option>
+                            <option value="option5">Opel</option>
+                            <option value="option6">Dodge</option>
+                        </select>
+                        <label class="label" for="brand">Марка авто:</label>
+                    </div>
+
+                    <div class="inputContainer">
+                        <select name="country" class="input">
+                            <option value="option0">...</option>
+                            <option value="option1">США</option>
+                            <option value="option2">Германия</option>
+                            <option value="option3">Япония</option>
+                        </select>
+                        <label class="label" for="country">Страна производитель:</label>
+                    </div>
+
+                    <div class="inputContainer">
+                        <input class="input" type="range" name="price_from" min="0" max="50000">
+                        <label class="label" for="price_from">Цена (от 0 до 50000):</label>
+                    </div>
+
+                    <div class="inputContainer">
+                        <input class="input" type="range" name="date_of_manufacture" min="1980" max="2022">
+                        <label class="label" for="date_of_manufacture">Год выпуска (от 1980 до 2022):</label>
+                    </div>
+
+                    <h3>Состояние автомобиля:</h3>
+
+                    <div class="inputContainer">
+                        <select name="accident" class="input">
+                            <option value="option0">...</option>
+                            <option value="option1">Не был в ДТП</option>
+                            <option value="option2">Был в ДТП</option>
+                        </select>
+                        <label class="label" for="accident">Участие в дтп:</label>
+                    </div>
+
+                    <div class="inputContainer">
+                        <select name="technical" class="input">
+                            <option value="option0">...</option>
+                            <option value="option1">Полностью не повреждено</option>
+                            <option value="option2">Профессионально отремонтированные повреждения</option>
+                            <option value="option3">Не на ходу / на запчасти</option>
+                        </select>
+                        <label class="label" for="technical">Техническое состояние:</label>
+                    </div>
+
+                    <div class="inputContainer">
+                        <select name="customs_clearance" class="input">
+                            <option value="option0">...</option>
+                            <option value="option1">Растаможена</option>
+                            <option value="option2">Не растаможена</option>
+                        </select>
+                        <label for="customs_clearance" class="label">Растаможка:</label>
+                    </div>
+
+                    <div class="inputContainer">
+                        <select name="credit" class="input">
+                            <option value="option0">...</option>
+                            <option value="option1">В кредите</option>
+                            <option value="option2">Не в кредите</option>
+                        </select>
+                        <label for="credit" class="label">Кредит:</label>
+                    </div>
+
+                    <h3>Технические характеристики:</h3>
+
+                    <h4>Топливо:</h4>
+                    <div class="inputContainer">
+                        <input type="checkbox" name="fuel1" value="fuel1">
+                        <label for="fuel1">Бензин</label>
+                        <input type="checkbox" name="fuel2" value="fuel2">
+                        <label for="fuel2">Дизель</label>
+                        <input type="checkbox" name="fuel3" value="fuel3">
+                        <label for="fuel3">Газ</label>
+                        <input type="checkbox" name="fuel4" value="fuel4">
+                        <label for="fuel4">Газ/Бензин</label>
+                        <input type="checkbox" name="fuel5" value="fuel5">
+                        <label for="fuel5">Гибрид</label>
+                    </div>
+
+                    <h4>КПП:</h4>
+                    <div class="inputContainer">
+                        <input type="checkbox" name="kpp1" value="kpp1">
+                        <label for="kpp1">Ручная/Механика</label>
+                        <input type="checkbox" name="kpp2" value="kpp2">
+                        <label for="kpp2">Автомат</label>
+                        <input type="checkbox" name="kpp3" value="kpp3">
+                        <label for="kpp3">Вариатор</label>
+                        <input type="checkbox" name="kpp4" value="kpp4">
+                        <label for="kpp4">Робот</label>
+                    </div>
+
+                    <div class="inputContainer">
+                        <select name="color" class="input">
+                            <option value="none">...</option>
+                            <option value="red">Красный</option>
+                            <option value="black">Черный</option>
+                            <option value="white">Белый</option>
+                        </select>
+                        <label class="label" for="color">Цвет автомобиля:</label>
+                    </div>
+
+                    <h3>Комфорт:</h3>
+                    <div class="inputContainer">
+                        <input type="checkbox" name="computer" value="computer">
+                        <label for="computer">Бортовой компьютер</label>
+                        <input type="checkbox" name="electropackage" value="electropackage">
+                        <label for="electropackage">Электропакет</label>
+                        <input type="checkbox" name="button_start" value="button_start">
+                        <label for="button_start">Запуск кнопкой</label>
+                        <input type="checkbox" name="air_conditioning" value="air_conditioning">
+                        <label for="air_conditioning">Кондиционер</label>
+                        <input type="checkbox" name="luke" value="luke">
+                        <label for="luke">Люк</label>
+                        <input type="checkbox" name="steering_wheel_heating" value="steering_wheel_heating">
+                        <label for="steering_wheel_heating">Обогрев руля</label>
+                        <input type="checkbox" name="seat_memory" value="seat_memory">
+                        <label for="seat_memory">Память сидений</label>
+                        <input type="checkbox" name="heated_mirrors" value="heated_mirrors">
+                        <label for="heated_mirrors">Подогрев зеркал</label>
+                    </div>
+
+                    <input type="submit" class="submitBtn" value="Search">
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
