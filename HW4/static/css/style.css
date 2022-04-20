@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Regular.woff2),
+    url(../fonts/Roboto-Regular.woff);
+    font-style: normal;
+    font-weight: 400;
+}
+
+body {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+}
+
+nav {
+    position: absolute;
+    left: 5.4%;
+    right: 72.5%;
+    top: 8.95%;
+    bottom: 88.05%;
+}
+
+a {
+    text-decoration: none;
+    color: #B1BBCB;
+    margin-right: 20px;
+    font-size: 17px;
+    line-height: 20px;
+    opacity: 0.87;
+}
+
+main {
+    position: absolute;
+    left: 9.5%;
+    right: 73.8%;
+    top: 21.47%;
+    bottom: 74.17%;
+}
+
+.title {
+    font-weight: 400;
+    margin: 0;
+    font-size: 25px;
+    line-height: 29px;
+    color: white;
+}
+
+.text {
+    margin-top: 3px;
+    font-size: 13px;
+    line-height: 18px;
+    color: white;
+    width: 451px;
+}
+
+footer {
+    position: absolute;
+    left: 5.4%;
+    right: 82%;
+    top: 90.63%;
+    bottom: 7.27%;
+}
+
+.footer-text {
+    font-size: 12px;
+    line-height: 14px;
+    opacity: 0.27;
+    color: white;
+}
