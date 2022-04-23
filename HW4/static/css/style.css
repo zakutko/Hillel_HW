@@ -12,6 +12,13 @@ body {
     padding: 50px 54px 48px;
 }
 
+.container-album {
+    min-height: 100vh;
+    color: white;
+    padding: 50px 54px 48px;
+    background-color: #141B23;
+}
+
 .header-nav a{
     text-decoration: none;
     color: #B1BBCB;
@@ -39,6 +46,14 @@ body {
     margin: 0 0 3px;
 }
 
+.main-content .album-title {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 29px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
 .main-content .text {
     font-size: 13px;
     line-height: 18px;
@@ -46,8 +61,39 @@ body {
     max-width: 451px;
 }
 
+.main-content-auhor {
+    margin-left: 42px;
+    margin-top: 83px;
+    margin-bottom: 100px;
+}
+
+.text-author {
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 0 25px;
+    padding-top: 320px;
+}
+
 .footer-text {
     font-size: 12px;
     line-height: 14px;
     opacity: 0.27;
+}
+
+.sign {
+    float: left; 
+    border: 1px solid #333;
+    padding: 7px;
+    margin: 10px 25px 10px 5px;
+    background: #ffffff;
+}
+
+.sign p img {
+    max-height: 324px;
+}
+
+.sign figcaption {
+    text-align: center;
+    color: #141B23;
+    margin: 0 auto 5px;
 }
