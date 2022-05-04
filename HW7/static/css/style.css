@@ -1,0 +1,456 @@
+.clearfix {
+    clear: both;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+    width: 941px;
+    margin: 0 auto;
+}
+
+.banner {
+    background: url(../img/bg.png) no-repeat;
+    min-height: 769px;
+    width: 100%;
+    background-size: cover;
+}
+
+.banner .logo {
+    padding-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner .title {
+    display: block;
+    font-family: 'BebasNeueBold';
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 5.7px;
+    color: white;
+    margin-top: 317px;
+    text-align: center;
+}
+
+.banner .subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: white;
+}
+
+.banner .scroll-down {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    letter-spacing: 3.7px;
+    color: white;
+    margin-top: 220px;
+}
+
+.header {
+    height: 65px;
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+}
+
+.header .logo-black {
+    float: left;
+    margin-top: 24px;
+    margin-bottom: 23px;
+}
+
+.nav {
+    float: right;
+    margin-top: 25px;
+    margin-bottom: 24px;
+}
+
+.nav a {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 1.09091px;
+
+    color: #48555B;
+    margin-right: 48px;
+}
+
+.nav a:last-child {
+    margin-right: 0px;
+}
+
+.nav a:hover {
+    color: #00A4E5;
+}
+
+.our-story {
+    margin-top: 58px;
+    text-align: center;
+}
+
+.our-story .story-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 2.30625px;
+
+    color: #48555B;
+}
+
+.line {
+    display: inline-block;
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    border-top: 2px solid #00A4E5;
+}
+
+.our-story .story-text {
+    width: 405px;
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 118px;
+}
+
+.our-story .story-text h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.1875px;
+    text-align: left;
+
+    color: #48555B;
+}
+
+.our-story .story-text p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 30px;
+    letter-spacing: 0.1875px;
+    margin-top: 30px;
+    text-align: left;
+
+    color: #48555B;
+}
+
+.colortext {
+    color: #00A4E5;
+}
+
+.our-story .story-cards {
+    display: inline-block;
+    margin-left: 67px;
+    margin-top: 80px;
+}
+
+.our-story .story-cards .card {
+    display: inline-block;
+    width: 140px;
+    height: 224px;
+    margin-right: 20px;
+}
+
+.our-story .story-cards .card:last-child {
+    margin-right: 0;
+}
+
+.our-story .story-cards .card .title-card {
+    margin-left: 14px;
+    text-align: left;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.1875px;
+
+    color: white;
+}
+
+.manage {
+    background: url(../img/manage.svg);
+}
+
+.plan {
+    background: url(../img/plan.svg);
+}
+
+.build {
+    background: url(../img/deliver.svg);
+}
+
+.services {
+    margin-top: 118px;
+}
+
+.services .cababilities {
+    height: 40px;
+}
+
+.services .capabilities .capabilities-title {
+    display: inline-block;
+    position: absolute;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+
+    letter-spacing: 2.3px;
+
+    color: #48555B;
+}
+
+.services .capabilities p {
+    display: inline-block;
+    margin-left: 354px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    width: 405px;
+    height: 38px;
+}
+
+.line-capabilities {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-top: 2px solid #00A4E5;
+    margin-top: -2px;
+}
+
+.services .services-cards {
+    margin-top: 80px;
+}
+
+.services-card {
+    display: inline-block;
+    width: 295px;
+    height: 330px;
+
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+
+    margin-right: 23px;
+}
+
+.services-card:last-child {
+    margin-right: 0;
+}
+
+.services-card-title {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.426667px;
+
+    color: #48555B;
+
+    margin: 13px 21px 0 23px;
+}
+
+.services-card-text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.1875px;
+
+    color: #48555B;
+
+    margin: 13px 21px 0 23px;
+}
+
+.services-card img {
+    display: inline-block;
+    margin-top: 38px;
+    margin-left: 23px;
+}
+
+.get-in-touch {
+    background: url(../img/bg-get-in-touch.png) no-repeat;
+    min-height: 500px;
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+}
+
+
+.get-in-touch-title {
+    display: inline-block;
+    width: 350px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.15px;
+
+    color: #48555B;
+
+    margin: 120px 545px 35px 545px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #00A4E5;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    color: white;
+    width: 150px;
+    height: 40px;
+
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+}
+
+.news-letter {
+    background: #171819;
+    min-height: 100px;
+}
+
+.news-letter-title {
+    float: left;
+    margin-left: 128px;
+    margin-top: 35px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+
+    text-align: center;
+    letter-spacing: 0.846154px;
+
+    color: #FFFFFF;
+}
+
+.signup {
+    float: right;
+    margin-top: 30px;
+    margin-right: 128px;
+}
+
+.signup input {
+    margin-right: -5px;
+    width: 250px;
+    height: 40px;
+    border: 0;
+    padding: 0;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.07px;
+
+    color: #48555B;
+    padding-left: 16px;
+}
+
+.footer {
+    background: #141A20;
+    height: 240px;
+}
+
+.footer-company {
+    display: inline-block;
+    width: 250px;
+    margin-top: 42px;
+}
+
+.footer-title {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+
+    letter-spacing: 0.846154px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer-company-logo {
+    margin-top: 9px;
+}
+
+.footer-company-text {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 19px;
+    letter-spacing: 0.85px;
+
+    color: white;
+
+    margin-top: 15px;
+}
+
+.footer-links {
+    display: inline-block;
+    width: 262px;
+    margin-top: 42px;
+    margin-left: 71px;
+}
+
+.links {
+    display: inline-block;
+    margin-right: 21px;
+}
+
+.links ul li a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 25px;
+
+    letter-spacing: 0.846154px;
+
+    color: white;
+}
+
+.footer-contact-us {
+    display: inline-block;
+    width: 141px;
+    margin-left: 58px;
+}
+
+.footer-contact-us-text {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.846154px;
+
+    color: white;
+
+    margin-top: 15px;
+}
+
+.footer-icons {
+    display: inline-block;
+    margin-top: 72px;
+    margin-left: 46px;
+    position: absolute;
+}
+
+.copyright {
+    background-color: #171819;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright-text {
+    text-align: center;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.846154px;
+
+    color: white;
+}
