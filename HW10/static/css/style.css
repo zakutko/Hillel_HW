@@ -1,0 +1,41 @@
+body {
+    background: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.fake {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    border-radius: 500px;
+    background-color: #c8c8c8;
+    transition: 0.5s;
+}
+
+.fake::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 260px;
+    height: 260px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:checked ~ .fake{
+    background-color: #58fb58;
+}
+
+input[type=checkbox]:checked ~ .fake::before {
+    background-color: #ffffff;
+    left: 320px;
+}
