@@ -1,0 +1,134 @@
+.clients {
+    margin-top: 149px;
+    min-height: 908px;
+    width: 100vw;
+    background: $color-bg-yellow;
+    padding: $clients-offset;
+
+    .clients-title {
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 43px;
+        text-align: center;
+        text-transform: uppercase;
+    
+        color: $text-color-white;
+    }
+
+    .clients-subtitle {
+        margin-top: 8px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+    
+        color: $text-color-white;
+    }
+
+    .clients-cards {
+        margin-top: 76px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .clients-card {
+            width: 567px;
+            min-height: 241px;
+            background: $clients-card-bg-color;
+            margin-bottom: 36px;
+            position: relative;
+            padding: $clients-card-offset;
+
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 121px;
+                height: 121px;
+                top: 43px;
+                left: 30px;
+            }
+
+            &.client-1 {
+                &::before {
+                    background: url($img-path + 'client-1.svg') $img-position;
+                }
+            }
+
+            &.client-2 {
+                &::before {
+                    background: url($img-path + 'client-2.svg') $img-position;
+                }
+            }
+
+            &.client-3 {
+                &::before {
+                    background: url($img-path + 'client-3.svg') $img-position;
+                }
+            }
+
+            &.client-4 {
+                &::before {
+                    background: url($img-path + 'client-4.svg') $img-position;
+                }
+            }
+
+            .clients-card-text {
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 19px;
+            
+                color: $text-color-grey;
+                position: relative;
+
+                &::before {
+                    content: '"';
+                    font-weight: 400;
+                    font-size: 30px;
+                    line-height: 35px;
+                
+                    color: $text-color-grey;
+                    position: absolute;
+                    left: -20px;
+                    top: -2px;
+                }
+
+                &::after {
+                    content: '"';
+                    font-weight: 400;
+                    font-size: 30px;
+                    line-height: 35px;
+                
+                    color: $text-color-grey;
+                    position: absolute;
+                }
+            }
+
+            .client {
+                margin-top: 21px;
+
+                .client-name {
+                    display: inline-block;
+                    margin-right: 8px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                    text-transform: uppercase;
+                
+                    color: $clients-name-text-color;
+                }
+
+                .client-position {
+                    display: inline-block;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                
+                    text-transform: uppercase;
+                
+                    color: $clients-position-text-color;
+                }
+            }
+        }
+    }
+}

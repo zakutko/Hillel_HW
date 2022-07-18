@@ -1,5 +1,5 @@
-.clearfix {
-    clear: both;
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -12,53 +12,46 @@ body {
 }
 
 .banner {
-    background: url(../img/bg.png) no-repeat;
-    min-height: 769px;
-    width: 100%;
+    background: url(../img/bg.png) center no-repeat;
+    height: 100vh;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 41px;
+    padding-bottom: 71px;
 }
 
-.banner .logo {
-    padding-top: 40px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.banner .title {
-    display: block;
+.banner-title {
     font-family: 'BebasNeueBold';
-    font-weight: 400;
     font-size: 60px;
     line-height: 70px;
-    letter-spacing: 5.7px;
-    color: white;
-    margin-top: 317px;
+    letter-spacing: 5.70937px;
     text-align: center;
+
+    color: #FFFFFF;
 }
 
-.banner .subtitle {
-    font-weight: 600;
+.banner-subtitle {
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    color: white;
+
+    color: #FFFFFF;
 }
 
-.banner .scroll-down {
-    font-weight: 600;
+.banner .scroll {
     font-size: 11px;
     line-height: 13px;
-    text-align: center;
     letter-spacing: 3.7px;
-    color: white;
-    margin-top: 220px;
+
+    color: #FFFFFF;
 }
 
 .header {
     height: 65px;
     border: 1px solid #E6E6E6;
-    box-sizing: border-box;
 }
 
 .header .logo-black {
@@ -93,32 +86,34 @@ body {
 }
 
 .our-story {
-    margin-top: 58px;
-    text-align: center;
+    padding-top: 57px;
 }
 
-.our-story .story-title {
-    font-weight: 700;
+.our-story-title {
+    position: relative;
     font-size: 18px;
     line-height: 21px;
-    text-align: center;
     letter-spacing: 2.30625px;
+    text-align: center;
 
     color: #48555B;
 }
 
-.line {
-    display: inline-block;
-    margin-top: 10px;
+.our-story-title::before {
+    position: absolute;
+    content: '';
     width: 50px;
-    height: 50px;
-    border-top: 2px solid #00A4E5;
+    height: 2px;
+    background: #00A4E5;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .our-story .story-text {
     width: 405px;
     float: left;
-    margin-top: 30px;
+    margin-top: 70px;
     margin-bottom: 118px;
 }
 
@@ -147,57 +142,70 @@ body {
     color: #00A4E5;
 }
 
-.our-story .story-cards {
+.story-cards {
     display: inline-block;
     margin-left: 67px;
     margin-top: 80px;
 }
 
-.our-story .story-cards .card {
+.card {
     display: inline-block;
     width: 140px;
     height: 224px;
     margin-right: 20px;
+    padding-top: 23px;
+    padding-left: 14px;
 }
 
-.our-story .story-cards .card:last-child {
+.card:last-child {
     margin-right: 0;
 }
 
-.our-story .story-cards .card .title-card {
-    margin-left: 14px;
-    text-align: left;
-    font-weight: 800;
+.card p {
     font-size: 24px;
     line-height: 29px;
     letter-spacing: 0.1875px;
+    font-weight: 700;
 
-    color: white;
+    color: #FFFFFF;
 }
 
-.manage {
+.card.manage {
     background: url(../img/manage.svg);
 }
 
-.plan {
+.card.plan {
     background: url(../img/plan.svg);
 }
 
-.build {
-    background: url(../img/deliver.svg);
+.card.build {
+    background: url(../img/build.svg);
 }
 
 .services {
     margin-top: 118px;
 }
 
-.services .cababilities {
+.capabilities {
     height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.services .capabilities .capabilities-title {
-    display: inline-block;
-    position: absolute;
+.capabilities p {
+    width: 405px;
+    margin-left: 155px;
+    margin-right: 32px;
+    font-size: 11px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    
+    color: #48555B;
+}
+
+.capabilities-title {
+    position: relative;
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
@@ -207,23 +215,13 @@ body {
     color: #48555B;
 }
 
-.services .capabilities p {
-    display: inline-block;
-    margin-left: 354px;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 19px;
-    letter-spacing: 0.2px;
-    width: 405px;
-    height: 38px;
-}
-
-.line-capabilities {
-    display: inline-block;
+.capabilities-title::before {
+    position: absolute;
+    content: '';
     width: 50px;
-    height: 50px;
-    border-top: 2px solid #00A4E5;
-    margin-top: -2px;
+    height: 2px;
+    background: #00A4E5;
+    top: 30px;
 }
 
 .services .services-cards {
@@ -274,6 +272,22 @@ body {
     margin-left: 23px;
 }
 
+.btn {
+    vertical-align: top;
+    background-color: #00A4E5;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    color: white;
+    width: 150px;
+    height: 40px;
+
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+}
+
 .get-in-touch {
     background: url(../img/bg-get-in-touch.png) no-repeat;
     min-height: 500px;
@@ -295,22 +309,6 @@ body {
     color: #48555B;
 
     margin: 120px 545px 35px 545px;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #00A4E5;
-    text-align: center;
-    text-decoration: none;
-    border: none;
-    color: white;
-    width: 150px;
-    height: 40px;
-
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 15px;
-    letter-spacing: 0.5px;
 }
 
 .news-letter {
@@ -411,6 +409,10 @@ body {
     letter-spacing: 0.846154px;
 
     color: white;
+}
+
+.links ul li a:hover {
+    background: #48555B;;
 }
 
 .footer-contact-us {

@@ -1,0 +1,103 @@
+.services {
+    margin-top: 63px;
+    width: 100vw;
+
+    .services-title {
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 43px;
+        text-align: center;
+        text-transform: uppercase;
+    
+        color: $text-color-grey-title;
+    }
+
+    .services-subtitle {
+        margin-top: 8px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        text-align: center;
+    
+        color: $text-color-grey-title;
+    }
+
+    .services-cards {
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .services-card {
+            position: relative;
+            width: 436px;
+            min-height: 57px;
+            margin-top: 87px;
+
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 56px;
+                height: 56px;
+            }
+
+            &.camera {
+                &::before {
+                    background: url($img-path + 'camera.svg') $img-position;
+                }
+            }
+
+            &.globe {
+                &::before {
+                    background: url($img-path + 'globe.svg') $img-position;
+                }
+            }
+
+            &.puzzle {
+                &::before {
+                    background: url($img-path + 'puzzle.svg') $img-position;
+                }
+            }
+
+            &.star {
+                &::before {
+                    background: url($img-path + 'star.svg') $img-position;
+                }
+            }
+
+            &.desktop {
+                &::before {
+                    background: url($img-path + 'desktop.svg') $img-position;
+                }
+            }
+
+            &.gift {
+                &::before {
+                    background: url($img-path + 'gift.svg') $img-position;
+                }
+            }
+
+            .services-card-desc {
+                padding-left: 73px;
+
+                .services-card-title {
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 23px;
+                    text-transform: uppercase;
+
+                    color: $text-color-grey-title;
+                }
+
+                .services-card-subtitle {
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 19px;
+                
+                    color: $text-color-grey;
+                }
+            }
+        }
+    }
+}

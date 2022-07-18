@@ -1,0 +1,46 @@
+@import 'variables';
+
+.labels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 66px 0;
+
+    &__item {
+        color: white;
+        padding: 20px 50px;
+        flex: 1;
+        background: url($link-to-images + 'label-bg-center.png') center no-repeat;
+        background-size: cover;
+
+        &--center {
+            text-align: center;
+        }
+
+        &--right {
+            text-align: right;
+        }
+
+        &--bg-left {
+            background: url($link-to-images + 'label-bg-left.png') center no-repeat;
+            position: relative;
+            left: 15px;
+        }
+
+        &--bg-right {
+            background: url($link-to-images + 'label-bg-right.png') center no-repeat;
+            position: relative;
+            left: -15px;
+        }
+    }
+
+    &__item-title {
+        font-weight: 700;
+        font-size: 30px;
+        margin-bottom: 7px;
+    }
+
+    &__item-subtitle {
+        font-size: 14px;
+    }
+}

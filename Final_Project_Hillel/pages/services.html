@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, 
+    height=device-height, user-scalable=yes">
+    <title>Послуги</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/css/index.css">
+    <link rel="stylesheet" href="../styles/css/services.css">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader__image"></div>
+    </div>
+    <section class="services-header">
+        <header class="main-header d-none d-lg-block">
+            <div class="container flex-between">
+                <div class="logo-about flex-center">
+                    <a href="../index.html">
+                        <object class="show-modal" data="../assets/svg/Logo-on-dark.svg" type="">
+                        </object>
+                    </a>
+                    <div class="logo-subsection flex-center">
+                        <object data="../assets/svg/slash.svg" type=""></object>
+                        <span class="txt--logo txt--m-reg">послуги</span>
+                        <object data="../assets/svg/slash-logo.svg" type=""></object>
+                    </div>
+                </div>
+                <span class="slash"></span>
+                <div class="header-info__wrapper">
+                    <div class="header-contacts txt--g-text">
+                        <div class="languages" id="act-lang">
+                            <span class="language active-lang">УК</span>
+                            <span class="language">РУ</span>
+                            <span class="language">EN</span>
+                        </div>
+                        <div class="dot-sep"></div>
+                        <span class="adress">Одеса, Адміральський пр., 3</span>
+                        <div class="dot-sep"></div>
+                        <span class="number">+38 (050) 390 15 91</span>
+                        <div class="dot-sep"></div>
+                        <a href="https://www.facebook.com/Hillel.IT.School/" target="blank">
+                            <object class="fb" data="../assets/svg/fb-grey.svg" type="image/svg+xml"></object>
+                        </a>
+                    </div>
+                    <nav class="main-nav">
+                        <ul class="main-nav-items" id="act-nav">
+                            <li class="main-nav-item">
+                                <a class="main-nav-link txt--act-reg" href="./about.html">про нас</a>
+                            </li>
+                            <li class="main-nav-item">
+                                <a class="main-nav-link txt--act-reg active-nav" href="#">послуги</a>
+                            </li>
+                            <li class="main-nav-item">
+                                <a class="main-nav-link txt--act-reg" href="./team.html">команда</a>
+                            </li>
+                            <li class="main-nav-item">
+                                <a class="main-nav-link txt--act-reg" href="./publications.html">публікації</a>
+                            </li>
+                            <li class="main-nav-item">
+                                <a class="main-nav-link txt--act-reg" href="./contact.html">контакти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <header class="main-header-mobile d-lg-none">
+            <div class="container">
+                <div class="topbar-mobile flex-between txt--g-text">
+                    <div class="languages" id="act-lang">
+                        <span class="language active-lang">УК</span>
+                        <span class="language">РУ</span>
+                        <span class="language">EN</span>
+                    </div>
+                    <span class="number">+38 (050) 390 15 91</span>
+                </div>
+                <nav class="main-nav-mob flex-between">
+                    <div class="logo-about flex-center">
+                        <a href="../index.html">
+                            <object class="show-modal" data="../assets/svg/logo-on-dark-mob.svg" type=""></object>
+                        </a>
+                        <div class="logo-subsection-2 flex-center">
+                            <object data="../assets/svg/slash-mob.svg" type=""></object>
+                            <span class="txt--logo-mob txt--m-reg">о нас</span>
+                            <object data="../assets/svg/slash-logo-mob.svg" type=""></object>
+                        </div>
+                    </div>
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox" id="icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </label>
+                    <ul class="main-nav-mob-items">
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox" id="icon" class="exit-menu">
+                            <object class="exit-menu-btn" data="../assets/svg/exit-menu.svg" type=""></object>
+                        </label>
+                        <div class="bgc-menu"></div>
+                        <li class="main-nav-mob-item">
+                            <a class="main-nav-mob-link" href="./about.html">про нас</a>
+                        </li>
+                        <li class="main-nav-mob-item" id="act-nav">
+                            <a class="main-nav-mob-link active-nav" href="#">послуги</a>
+                        </li>
+                        <li class="main-nav-mob-item">
+                            <a class="main-nav-mob-link" href="./team.html">команда</a>
+                        </li>
+                        <li class="main-nav-mob-item">
+                            <a class="main-nav-mob-link" href="./publications.html">публікації</a>
+                        </li>
+                        <li class="main-nav-mob-item">
+                            <a class="main-nav-mob-link" href="./contact.html">контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="section-first" id="scrollspyBottom">
+            <div class="section-first__services container">
+                <div class="section-first__services-titles">
+                    <div class="d-inline">
+                        <a class="txt--services h-3-caps txt--white" href="#">послуги<i class="arrow-1 arrow-right"></i></a>
+                    </div>
+                    <h5 class="txt--gr-red hero d-none d-lg-block">Що ми вміємо робити краще за інших?</h5>
+                    <h5 class="txt--gr-red hero-mob d-lg-none">Що ми вміємо робити краще за інших?</h5>
+                </div>
+                <div class="section-first__services-items flex-between">
+                    <div class="row row-1--mrg g-0">
+                        <div class="section-first__services-item col-lg-4 col-md-6 col-sm-12">
+                            <div class="media-flex-760">
+                                <div class="services-icon__wrapped">
+                                    <object class="services-icon" data="../assets/svg/shopping-icon.svg" type=""></object>
+                                </div>
+                                <h3 class="serv--h3 h-3 txt--act-reg d-none d-md-block">IT та електронна комерція</h3>
+                                <h3 class="serv--h3-mob h-3-mob txt--act-reg d-md-none">IT та електронна комерція</h3>
+                            </div>
+                            <p class="serv--txt p txt--white">
+                                Нескінчений потік договорів, податкові питання, трудові відносини, корпоративні папери —
+                                юридична робота відволікає вас від ведення бізнесу. Але роботи не так вже й багато, щоб
+                                наймати
+                                інхауз-юриста.
+                            </p>
+                        </div>
+                        <div class="section-first__services-item col-lg-4 col-md-6 col-sm-12">
+                            <div class="media-flex-760">
+                                <div class="services-icon__wrapped">
+                                    <object class="services-icon" data="../assets/svg/case-icon.svg" type=""></object>
+                                </div>
+                                <h3 class="serv--h3 h-3 txt--act-reg d-none d-md-block">
+                                    Комплексний щоденний
+                                    юридичний супровід
+                                </h3>
+                                <h3 class="serv--h3-mob h-3-mob txt--act-reg d-md-none">
+                                    Комплексний щоденний
+                                    юридичний супровід
+                                </h3>
+                            </div>
+                            <p class="serv--txt p txt--white">
+                                До того ж, з часом робота стане однотипною і нецікавою для штатного юриста. А ще ми добре
+                                знаємо, як важко в Україні знайти хорошого кандидата з досвідом у сфері інформаційних
+                                технологій.
+                            </p>
+                        </div>
+                        <div class="section-first__services-item col-lg-4 col-md-6 col-sm-12">
+                            <div class="media-flex-760">
+                                <div class="services-icon__wrapped">
+                                    <object class="services-icon" data="../assets/svg/crowdfunding-icon.svg"
+                                        type=""></object>
+                                </div>
+                                <h3 class="serv--h3 h-3 txt--act-reg d-none d-md-block">Структуризація корпоративних
+                                    відносин</h3>
+                                <h3 class="serv--h3-mob h-3-mob txt--act-reg d-md-none">Структуризація корпоративних
+                                    відносин</h3>
+                            </div>
+                            <p class="serv--txt p txt--white">
+                                Замість просто надавати юридичні послуги, ми закріпимо юриста або цілу команду, які
+                                впишуться в
+                                повсякденне життя вашої компанії.
+                            </p>
+                        </div>
+                        <div class="section-first__services-item col-lg-4 col-md-6 col-sm-12">
+                            <div class="media-flex-760">
+                                <div class="services-icon__wrapped">
+                                    <object class="services-icon" data="../assets/svg/hands-icon.svg" type=""></object>
+                                </div>
+                                <h3 class="serv--h3 h-3 txt--act-reg d-none d-md-block">Побудовa договірних відносин</h3>
+                                <h3 class="serv--h3-mob h-3-mob txt--act-reg d-md-none">Побудовa договірних відносин</h3>
+                            </div>
+                            <p class="serv--txt p txt--white">
+                                Раз на тиждень, чи тиждень на місяць у вас під боком є ваш власний юрист. Будь-хто в
+                                компанії
+                                може впіймати його біля кавоварки і просто поговорити про поточні справи замість очікування
+                                статусу update.
+                            </p>
+                        </div>
+                        <div class="section-first__services-item col-lg-4 col-md-6 col-sm-12">
+                            <div class="media-flex-760">
+                                <div class="services-icon__wrapped">
+                                    <object class="services-icon" data="../assets/svg/security-icon.svg" type=""></object>
+                                </div>
+                                <h3 class="serv--h3 h-3 txt--act-reg d-none d-md-block">Захист бізнесу, інтелектуальної
+                                    власності</h3>
+                                <h3 class="serv--h3-mob h-3-mob txt--act-reg d-md-none">Захист бізнесу, інтелектуальної
+                                    власності</h3>
+                            </div>
+                            <p class="serv--txt p txt--white">
+                                А весь інший час він працюватиме над новими різноплановими проектами, тому вже точно не
+                                зупиниться в професійному розвитку. Так чи інакше, на вас працюватиме весь Axon Partners
+                                замість
+                                корпоративного юриста.
+                            </p>
+                        </div>
+                        <div class="section-first__services-item col-lg-4 col-md-6 col-sm-12">
+                            <div class="media-flex-760">
+                                <div class="services-icon__wrapped">
+                                    <object class="services-icon" data="../assets/svg/lawyer-icon.svg" type=""></object>
+                                </div>
+                                <h3 class="serv--h3 h-3 txt--act-reg d-none d-md-block">Судове представництво</h3>
+                                <h3 class="serv--h3-mob h-3-mob txt--act-reg d-md-none">Судове представництво</h3>
+                            </div>
+                            <p class="serv--txt p txt--white">
+                                Невелика компанія, середнього розміру, чи вже лідер ринку? Локальний бізнес або
+                                транснаціональна
+                                компанія? Маєте власний юридичний відділ, чи ні?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="section-second">
+        <div class="container-second">
+            <div class="card-case">
+                <div class="card-case__row">
+                    <div class="card-case__col-1 flex-column-end">
+                        <div class="card-case__col-title">
+                            <h3 class="h-3-caps txt--accent">Успішні кейси</h3>
+                        </div>
+                        <div class="card-case__content flex-1 flex-column-end">
+                            <h3 class="txt--card-case h-3 txt--m-soft">
+                                Супровід проекту з <br>
+                                купівлі-продажу <br class="d-none d-md-block">
+                                сільськогосподарської продукції
+                            </h3>
+                            <p class="company--txt p txt--g-text">Hillel IT School</p>
+                        </div>
+                    </div>
+                    <div class="card-case__col-2 flex-column-end">
+                        <div class="card-case__content flex-1 flex-column-end">
+                            <h3 class="txt--card-case h-3 txt--m-soft">
+                                Підготовка комплексного <br class="d-none d-md-block">
+                                юридичного висновку для <br class="d-none d-md-block">
+                                європейського банку
+                            </h3>
+                            <p class="company--txt p txt--g-text">WannaBizh</p>
+                        </div>
+                    </div>
+                    <div class="card-case__col-3 flex-column-end">
+                        <div class="card-case__content flex-1 flex-column-end">
+                            <h3 class="txt--card-case h-3 txt--m-soft">
+                                Супровід проекту з <br>
+                                купівлі-продажу <br class="d-none d-md-block">
+                                сільськогосподарської продукції
+                            </h3>
+                            <p class="company--txt p txt--g-text">tapgerine</p>
+                        </div>
+                    </div>
+                    <div class="card-case__col-4 flex-column-end">
+                        <div class="card-case__content flex-1 flex-column-end">
+                            <h3 class="txt--card-case h-3 txt--m-soft">
+                                Представництво <br class="d-none d-md-block">
+                                інтересів великого <br class="d-none d-md-block">
+                                зернотрейдера в <br class="d-none d-md-block">
+                                податковому спорі
+                            </h3>
+                            <p class="company--txt p txt--g-text">3D LOOK</p>
+                        </div>
+                    </div>
+                    <div class="card-case__col-5 flex-column-end">
+                        <div class="card-case__content flex-1 flex-column-end">
+                            <h3 class="txt--card-case h-3 txt--m-soft">
+                                Оскарження податкових <br class="d-none d-md-block">
+                                повідомлень-рішень ДФС
+                            </h3>
+                            <p class="company--txt p txt--g-text">adtelligent</p>
+                        </div>
+                    </div>
+                    <div class="card-case__col-6 flex-column-end">
+                        <div class="card-case__content flex-1 flex-column-end">
+                            <h3 class="txt--card-case h-3 txt--m-soft">
+                                Супровід проекту з кредитування <br class="d-none d-md-block">
+                                агротрейдерів мальтійським банком
+                            </h3>
+                            <p class="company--txt p txt--g-text">Cliсkky</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clients-grid">
+            <h3 class="clients-grid__title h-3-caps txt--center txt--m-reg">Вже довіряють нам</h3>
+            <div class="clients-grid__row">
+                <div class="clients-grid__col bg-client-1 flex-center">
+                    <img class="img-fluid" src="../assets/images/clients-logo/hillel-clients-logo.png" alt="">
+                </div>
+                <div class="clients-grid__col bg-client-2 flex-center">
+                    <img class="img-fluid" src="../assets/images/clients-logo/wanna-clients-logo.png" alt="">
+                </div>
+                <div class="clients-grid__col bg-client-3 flex-center">
+                    <img class="img-fluid" src="../assets/images/clients-logo/tapgerine-clients-logo.png" alt="">
+                </div>
+                <div class="clients-grid__col bg-client-4 flex-center">
+                    <img class="img-fluid" src="../assets/images/clients-logo/3dlook-clients-logo.png" alt="">
+                </div>
+                <div class="clients-grid__col bg-client-5 flex-center">
+                    <img class="img-fluid" src="../assets/images/clients-logo/orangear-clients-logo.png" alt="">
+                </div>
+                <div class="clients-grid__col bg-client-6 flex-center">
+                    <img class="img-fluid" src="../assets/images/clients-logo/adtelligent-clients-logo.png" alt="">
+                </div>
+                <div class="clients-grid__col bg-client-7 flex-center">
+                    <img class="img-fluid" src="../assets/images/clients-logo/clickky-clients-logo.png" alt="">
+                </div>
+                <div class="clients-grid__col bg-client-8 flex-center">
+                    <img class="img-fluid" src="../assets/images/clients-logo/ecolease-clients-logo.png" alt="">
+                </div>
+                <div class="clients-grid__col bg-client-9 flex-center">
+                    <img class="img-fluid" src="../assets/images/clients-logo/infratek-clients-logo.png" alt="">
+                </div>
+                <div class="clients-grid__col bg-client-10 flex-center">
+                    <img class="img-fluid" src="../assets/images/clients-logo/citypark-clients-logo.png" alt="">
+                </div>
+                <div class="clients-grid__col bg-client-11 flex-center">
+                    <img class="img-fluid" src="../assets/images/clients-logo/artprint-clients-logo.png" alt="">
+                </div>
+                <div class="clients-grid__col bg-client-12 flex-center">
+                    <img class="img-fluid" src="../assets/images/clients-logo/ultimate-clients-logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer bgc-grey">
+        <div class="container-second flex-between-start">
+            <div class="main-footer__contacts">
+                <div class="main-footer__adress flex-start-center">
+                    <span class="txt--adress txt--m-reg">Одеса, Адміральський пр., 3</span>
+                    <div class="dot-footer dot-6x6"></div>
+                    <a class="txt--map txt--uppercase txt--act-reg" href="./pages/contact.html">Подивитися на мапі</a>
+                </div>
+                <div class="main-footer__social flex-start-center">
+                    <a href="https://www.facebook.com/Hillel.IT.School/" target="blank">
+                        <object class="footer-fb-logo" data="../assets/svg/fb-blue.svg" type="image/svg+xml"></object>
+                    </a>
+                    <div class="dot-footer-2 dot-6x6"></div>
+                    <span class="txt--phone txt--m-alt">+38 (050) 390 15 91</span>
+                    <div class="dot-footer-2 dot-6x6"></div>
+                    <a class="txt--email txt--act-reg" href="mailto:contact@hlegals.net"
+                        target="blank">contact@hlegals.net</a>
+                </div>
+            </div>
+            <div class="main-footer__copyright">
+                <p class="txt--g-text txt--copyright">© 2021 ТОВ Юридична компанія «HLEGALS»</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="./js/active.js"></script>
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+    </script>
+</body>
+
+</html>

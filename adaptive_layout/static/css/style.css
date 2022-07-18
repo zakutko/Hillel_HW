@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background: green;
+    border: 5px solid grey;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background: red;
+    border: 2px solid blue;
+    flex-basis: 25%;
+}
+
+@media screen and (max-width: 768px){
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .card {
+        flex-basis: 100%;
+    }
+}

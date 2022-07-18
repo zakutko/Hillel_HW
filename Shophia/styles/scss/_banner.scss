@@ -1,0 +1,141 @@
+@import 'variables';
+@import 'mixins';
+
+.banner {
+    position: relative;
+
+    .banner-container {
+        position: absolute;
+        top: 20%;
+        left: 41%;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .banner-button {
+            margin-top: 57px;
+            width: 189px;
+            height: 53px;
+            font-weight: 700;
+            font-size: 24px;
+            color: white;
+            background-color: $bg-banner-button;
+            border: 0;
+            transition: color 0.8s;
+
+            &:hover {
+                color: $text-dark;
+            }
+        }
+    
+        .banner-outer-border {
+            max-width: 273px;
+            min-height: 273px;
+            border: 2px solid white;
+            padding: 7px 9px 9px 7px;
+    
+            .banner-inner-border {
+                width: 257px;
+                height: 257px;
+                border: 1px solid white;
+    
+                .banner-title {
+                    margin-top: 25px;
+                    font-weight: 700;
+                    font-size: 19px;
+                    text-align: center;
+                    color: white;
+                }
+    
+                .banner-sale {
+                    margin-top: 18px;
+                    font-weight: 700;
+                    font-size: 59px;
+                    text-align: center;
+                    color: $text-dark;
+
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        display: block;
+                        width: 33px;
+                        height: 1px;
+                        background: white;
+                        top: 163px;
+                        left: 23%;
+                        opacity: 0.8;
+                    }
+
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        display: block;
+                        width: 33px;
+                        height: 1px;
+                        background: white;
+                        top: 163px;
+                        right: 23%;
+                        opacity: 0.8;
+                    }
+                }
+
+                .up-to {
+                    position: relative;
+                    margin-top: 25px;
+                    text-align: center;
+                    font-weight: 700;
+                    font-size: 19px;
+                    color: white;
+
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        display: block;
+                        width: 60px;
+                        height: 1px;
+                        background: white;
+                        top: 15px;
+                        left: 10%;
+                    }
+
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        display: block;
+                        width: 60px;
+                        height: 1px;
+                        background: white;
+                        top: 15px;
+                        right: 28px;
+                    }
+                }
+    
+                .banner-percent {
+                    margin-top: 14px;
+                    font-weight: 700;
+                    font-size: 31px;
+                    text-align: center;
+                    color: $text-dark;
+                }
+            }
+        }
+    }
+
+    
+    .carousel-indicators [data-bs-target] {
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+        background-color: $carusel-ind;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+
+        &.active {
+            background-color: $carusel-ind-active;
+        }
+    }
+}

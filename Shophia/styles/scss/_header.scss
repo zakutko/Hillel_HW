@@ -1,0 +1,108 @@
+@import 'variables';
+@import 'mixins';
+
+
+.header{
+
+    .top-header{
+        background-color: $bg-grey;
+        padding: 14px 0;
+    }
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .phone{
+        color: $text-grey;
+        font-size: 11px;
+        text-decoration: none;
+        transition: color $hover-duration;
+
+        .fa-phone{
+            font-size: 12px;
+            margin-right: 5px;
+        }
+
+       @include main-hover();
+    }
+
+    .top-nav{
+        a{
+            text-decoration: none;
+            color: $text-grey;
+            font-size: 11px;
+            border-right: 1px solid $text-grey;
+            padding: 0 20px;
+            transition: color $hover-duration;
+
+            &:last-child{
+                border-right: none;
+                padding-right: 0;
+            }
+
+            @include main-hover();
+        }
+    }
+
+    .main-header{
+
+        .container{
+            min-height: 128px;
+        }
+
+        .main-nav{
+            
+            a{
+                color: $text-dark;
+                margin-right: 24px;
+                font-size: 18px;
+                text-decoration: none;
+                transition: color $hover-duration;
+
+                @include main-hover();
+            }
+        }
+
+        .logo{
+            font-family: 'Playfair Display SC', serif;
+            font-size: 72px;
+            text-decoration: none;
+            color: $text-dark;
+        }
+    }
+
+    .social{
+        a{
+            color: $text-gold;
+            font-size: 16px;
+            border: 1px solid $text-gold;
+            border-radius: 50%;
+            padding: 7px;
+            display: inline-block;
+            margin-right: 17px;
+            transition: all $hover-duration;
+
+            &:last-child{
+                margin-right: 54px;
+            }
+
+            @include invert-hover();
+        }
+        
+    }
+
+    .right-side{
+        display: flex;
+        align-items: center;
+    }
+
+    .dropdown .dropdown-toggle{
+        background-color: $bg-dark;
+        border-radius: 0;
+        padding: 10px 7px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,35 @@
+.header {
+    padding-top: 35px;
+    min-height: 93px;
+
+    .nav {
+        display: flex;
+        justify-content: center;
+        margin-left: 140px;
+        margin-right: 140px;
+
+        .nav-item {
+            margin-right: 10px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                text-decoration: none;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                text-transform: uppercase;
+
+                color: $header-primary-text-color;
+                padding: $header-link-offset;
+
+                &:hover {
+                    background: $header-hover-color;
+                    color: $header-hover-text-color;
+                }
+            }
+        }
+    }
+}

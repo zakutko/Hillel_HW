@@ -1,0 +1,161 @@
+.prices {
+    min-height: 898px;
+    width: 100vw;
+    padding-top: 110px;
+    background-color: $prices-bg-color;
+
+    .prices-title {
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 43px;
+        text-align: center;
+        text-transform: uppercase;
+    
+        color: $text-color-grey-title;
+    }
+
+    .prices-subtitle {
+        margin-top: 8px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        text-align: center;
+    
+        color: $prices-subtitle-color;
+    }
+
+    .prices-cards {
+        margin-top: 79px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .prices-card {
+            padding-top: 42px;
+            margin-right: 1px;
+            width: 391px;
+            min-height: 441px;
+            background: $text-color-white;
+            border: 1px solid $prices-cards-border-color;
+            text-align: center;
+
+            .prices-title {
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 36px;  
+                text-align: center;
+                text-transform: uppercase;
+            
+                color: $prices-cards-title-color;
+            }
+
+            .prices-price {
+                margin-top: 8px;
+            
+                font-weight: 700;
+                font-size: 60px;
+                line-height: 85px;
+                text-align: center;
+            
+                color: $color-yellow;
+            }
+
+            .prices-subtitle {
+                margin-bottom: 25px;
+            
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 23px;
+                text-align: center;
+                text-transform: uppercase;
+            
+                color: $prices-cards-title-color;
+            }
+
+            .prices-box {
+                display: inline-block;
+                text-align: center;
+                border-top: 1px solid $prices-box-border-color;
+                width: 329px;
+                height: 31px;
+            }
+
+            .prices-box-text {
+                text-align: center;
+                font-weight: 400;
+                font-size: 13.5px;
+                line-height: 19px;
+            
+                color: $prices-box-text-color;
+            }
+
+            .prices-box-btn {
+                padding: $prices-btn-offset;
+                margin-top: 28px;
+            
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                border: none;
+            
+                background: $color-yellow;
+                color: $text-color-white;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:hover {
+                background-color: $color-blue;
+                transform:scale(1.01, 1.1);
+                z-index: 1;
+
+                .prices-title {
+                    font-weight: 400;
+                    font-size: 25px;
+                    line-height: 36px;
+                    text-align: center;
+                    text-transform: uppercase;
+                
+                    color: $text-color-white;
+                }
+
+                .prices-price {
+                    font-weight: 700;
+                    font-size: 60px;
+                    line-height: 85px;
+                    text-align: center;
+                
+                    color: $text-color-white;
+                }
+
+                .prices-subtitle {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 23px;
+                    text-align: center;
+                    text-transform: uppercase;
+                
+                    color: $text-color-white;
+                }
+
+                .prices-box {
+                    display: inline-block;
+                    text-align: center;
+                    width: 329px;
+                    height: 31px;
+                }
+
+                .prices-box-text {
+                    text-align: center;
+                    font-weight: 400;
+                    font-size: 13.5px;
+                    line-height: 19px;
+                
+                    color: $prices-box-text-color-hover;
+                }
+            }
+        }
+    }
+}

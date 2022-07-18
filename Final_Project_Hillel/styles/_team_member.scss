@@ -1,0 +1,126 @@
+@import 'var';
+@import 'reset';
+@import 'common';
+@import 'common2';
+//fonts
+@import 'fonts';
+//preloader
+@import 'preloader';
+
+.team-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.team-member {
+    margin-top: 30px;
+}
+
+.team-member-content {
+    display: flex;
+    justify-content: center;
+    @media(max-width: 992px) {
+        flex-direction: column;
+    }
+    .intro-img {
+        max-height: 500px;
+        padding-right: 41px;
+        max-width: 100%;
+        @media(max-width: 992px) {
+            max-width: 413px;
+            padding-right: 0;
+        }
+        @media(max-width: 576px) {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    .team-member-text-content {
+        max-width: 641px;
+        .description {
+            font-size: 18px;
+            color: black;
+        }
+    }
+    .heading {
+        font-weight: bold;
+        font-size: 42px;
+        background: -webkit-linear-gradient(45deg, #F0145A, #EF8080);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-top: 22px;
+        @media(max-width: 576px) {
+            font-size: 32px;
+        }
+    }
+    .text-description {
+        margin: 40px 0 80px 0;
+        @media(max-width: 576px) {
+            margin: 20px 0 40px 0;
+        }
+    }
+    .mini-heading {
+        color: darkblue;
+        font-size: 14px;
+        font-weight: 700;
+        margin-top: 40px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        @media(max-width: 992px) {
+            margin-top: 20px;
+        }
+    }
+    .contact {
+        display: flex;
+        border-bottom: 4px solid;
+        border-color: #E6E6F0;
+        margin-top: 13px;
+        padding-bottom: 20px;
+        @media(max-width: 576px) {
+            flex-direction: column;
+        }
+        a {
+            text-decoration: none;
+            color: $active-regular;
+            @media(max-width: 576px) {
+                margin-bottom: 10px;
+            }
+        }
+        a:hover {
+            color: #F0145A;
+            
+        }
+        .linkedin {
+            @media(max-width: 576px) {
+                margin-bottom: 20px;
+            }
+        }
+        a::before {
+            content: " ";
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            background-color: #E6E6F0;
+            border-radius: 120%;
+            vertical-align: baseline;
+            margin: 0px 10px 1px 10px;
+            @media(max-width: 576px) {
+                display: none;
+            }
+        }
+        .position {
+            color: $grey-text;
+            @media(max-width: 576px) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@import 'media-team';

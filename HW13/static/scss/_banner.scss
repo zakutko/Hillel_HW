@@ -1,0 +1,123 @@
+.banner {
+    width: 100vw;
+    min-height: 589px;
+    background: $color-blue;
+    padding-top: 83px;
+    position: relative;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner-title {
+        font-weight: 800;
+        font-size: 35px;
+        line-height: 50px;
+        text-align: center;
+        text-transform: uppercase;
+    
+        color: $text-color-white;
+    }
+
+    .banner-subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        text-align: center;
+    
+        color: $text-color-white;
+        margin-top: 8px;
+    }
+
+    .banner-image {
+        position: relative;
+        bottom: -63px;
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
+        flex-wrap: wrap;
+
+        .form-group {
+            position: relative;
+            margin-right: 10px;
+
+            .text-input {
+                width: 281px;
+                height: 46px;
+                border: none;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 19px;
+                outline: none;
+            
+                color: #A9A9A9;
+                padding-left: 40px;
+            }
+
+            &::before {
+                content: '';
+                display: block;
+                width: 14px;    
+                height: 15px;
+                position: absolute;
+                top: 16px;
+                left: 16px;
+            }
+
+            &.name {
+                &::before {
+                    background: url($img-path + 'name.svg') $img-position;
+                }
+            }
+
+            &.email {
+                &::before {
+                    width: 16px;    
+                    height: 12px;
+                    background: url($img-path + 'email.svg') $img-position;
+                    top: 17px;
+                }
+            }
+
+            &.phone {
+                &::before {
+                    background: url($img-path + 'phone.svg') $img-position;
+                }
+            }
+        }
+
+        .form-btn {
+            padding: $btn-lg-offset;
+            background: $color-yellow;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            border: none;
+        
+            color: $text-color-white;
+        }
+    }
+}
+
+.dots {
+    text-align: center;
+
+    .dot {
+        margin-top: 87px;
+        margin-right: 11px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        display: inline-block;
+        border: 2px solid $banner-dots-color-main;
+
+        &:hover {
+            border: 2px solid $banner-dots-color-hover;
+        }
+    }
+}

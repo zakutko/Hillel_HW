@@ -1,0 +1,31 @@
+body {
+    background: #233d4f;
+}
+
+.checkbox {
+    position: relative;
+}
+
+.checkbox .fake {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid #FFFFFF;
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+}
+
+.checkbox input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    margin: 0;
+    opacity: 0;
+}
+
+.checkbox input[type="checkbox"]:checked + .fake {
+    border-color: #FEB649;
+    background: #FEB649 url(../img/check_white.png) center no-repeat;
+    background-size: 10px;
+}

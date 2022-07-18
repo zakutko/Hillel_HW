@@ -10,14 +10,16 @@
         <title>Homework_7</title>
     </head>
     <body>
-        <div class="banner">
-            <a href="#"><img class="logo" src="static/img/logo.svg" alt="logo"></a>
-            <h1 class="title">PARTNER WITH KONSTUCT</h1>
-            <h3 class="subtitle">An award-winning construction management firm</h3>
-            <a href="#"><h3 class="scroll-down">SCROLL DOWN</h3></a>
-        </div>
+        <section class="banner">
+            <a class="logo" href="#"><img src="static/img/logo.svg" alt="logo"></a>
+            <div class="banner-text">
+                <h1 class="banner-title">PARTNER WITH KONSTUCT</h1>
+                <h3 class="banner-subtitle">An award-winning construction management firm</h3>
+            </div>
+            <a class="scroll" href="#header"><h3 class="scroll-down">SCROLL DOWN</h3></a>
+        </section>
 
-        <header class="header">
+        <header id="header" class="header">
             <div class="wrapper">
                 <a href="#"><img class="logo-black" src="static/img/logo-black.svg" alt="logo-black"></a>
                 <nav class="nav">
@@ -31,82 +33,79 @@
             </div>
         </header>
 
-        <main class="main">
+        <section class="our-story">
             <div class="wrapper">
-                <div class="our-story">
-                    <h1 class="story-title">OUR STORY</h1>
-                    <div>
-                        <div class="line"></div>
+                <h1 class="our-story-title">OUR STORY</h1>
+                <div class="story-text">
+                    <h3>Founded in 2011 by John Mathew Smith, <span class="colortext">Konstruct</span> has become the number one construction management firm</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
+                    </p>
+                </div>
+                <div class="story-cards">
+                    <div class="card plan">
+                        <p>WE <br> PLAN</p>
                     </div>
-                    <div class="story-text">
-                        <h3>Founded in 2011 by John Mathew Smith, <span class="colortext">Konstruct</span> has become the number one construction management firm</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
-                        </p>
+                    <div class="card manage">
+                        <p>WE <br> MANAGE</p>
                     </div>
-                    <div class="story-cards">
-                        <div class="card plan"></div>
-                        <div class="card manage"></div>
-                        <div class="card build"></div>
+                    <div class="card build">
+                        <p>WE <br> BUILD</p>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="services">
-                    <div class="capabilities">
-                        <h1 class="capabilities-title">OUR CAPABILITIES</h1>
-                        <p>
+        <section class="services">
+            <div class="wrapper">
+                <div class="capabilities">
+                    <h1 class="capabilities-title">OUR CAPABILITIES</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
+                    </p>
+                    <button class="btn">ALL SERVICES</button>
+                </div>
+
+                <div class="services-cards">
+                    <div class="services-card">
+                        <img src="static/img/icon-1.svg" alt="icon-1">
+                        <h1 class="services-card-title">PROJECT AND CONSTRUCTION MANAGEMENT</h1>
+                        <p class="services-card-text">
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
                         </p>
-
-                        <button class="btn">ALL SERVICES</button>
-                        <div class="clearfix"></div>
                     </div>
-                    <div>
-                        <div class="line-capabilities"></div>
+                    <div class="services-card">
+                        <img src="static/img/icon-2.png" alt="icon-2">
+                        <h1 class="services-card-title">STRUCTURE AUDIT AND MAINTENANCE</h1>
+                        <p class="services-card-text">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
+                        </p>
                     </div>
-
-                    <div class="services-cards">
-                        <div class="services-card">
-                            <img src="static/img/icon-1.svg" alt="icon-1">
-                            <h1 class="services-card-title">PROJECT AND CONSTRUCTION MANAGEMENT</h1>
-                            <p class="services-card-text">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
-                            </p>
-                        </div>
-                        <div class="services-card">
-                            <img src="static/img/icon-2.png" alt="icon-2">
-                            <h1 class="services-card-title">STRUCTURE AUDIT AND MAINTENANCE</h1>
-                            <p class="services-card-text">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
-                            </p>
-                        </div>
-                        <div class="services-card">
-                            <img src="static/img/icon-3.svg" alt="icon-3">
-                            <h1 class="services-card-title">FACTORY CONSTRUCTION AND MODELING</h1>
-                            <p class="services-card-text">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
-                            </p>
-                        </div>
+                    <div class="services-card">
+                        <img src="static/img/icon-3.svg" alt="icon-3">
+                        <h1 class="services-card-title">FACTORY CONSTRUCTION AND MODELING</h1>
+                        <p class="services-card-text">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
+                        </p>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="get-in-touch">
-                <h1 class="get-in-touch-title">Want to build something amazing?</h1>
-                <button class="btn">GET IN TOUCH</button>               
-            </div>
+        <div class="get-in-touch">
+            <h1 class="get-in-touch-title">Want to build something amazing?</h1>
+            <button class="btn">GET IN TOUCH</button>               
+        </div>
 
-            <div class="news-letter">
-                <div class="wrapper">
-                    <h1 class="news-letter-title">Newsletter Signup</h1>
-                    <div class="signup">
-                        <input type="text" value="test@youremail.com">
-                        <button class="btn">SIGNUP</button>
-                    </div>
+        <div class="news-letter">
+            <div class="wrapper">
+                <h1 class="news-letter-title">Newsletter Signup</h1>
+                <div class="signup">
+                    <input type="text" value="test@youremail.com">
+                    <button class="btn">SIGNUP</button>
                 </div>
             </div>
-        </main>
-
+        </div>
         <footer class="footer">
             <div class="wrapper">
                 <div class="footer-company">

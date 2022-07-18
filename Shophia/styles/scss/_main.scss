@@ -1,0 +1,46 @@
+@import 'variables';
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+.container{
+    max-width: 1325px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 30px 82px 58px 96px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+
+    &::after,
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 19px;
+        height: 19px;
+        background-color: $text-gold;
+        transform: rotate(45deg) translateY(-50%);
+        top: 40%;
+    }
+
+    &::before {
+        left: 0;
+    }
+
+    &::after {
+        right: 0;
+    }
+}

@@ -1,0 +1,12 @@
+@mixin main-hover{
+    &:hover{
+        color: $main-color;
+    }
+}
+
+@mixin invert-hover{
+    &:hover{
+        color: $text-dark;
+        border-color: $text-dark;
+    }
+}

@@ -1,0 +1,72 @@
+.footer {
+    padding-top: 65px;
+
+    .footer-nav {
+        display: flex;
+        justify-content: center;
+
+        a {
+            margin-right: 30px;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 16px;
+            text-decoration: none;
+        
+            color: $text-color-grey-title;
+
+            &:last-child {
+                margin-right: 0;    
+            }
+
+            &:hover {
+                color: $color-blue;
+            }
+        }
+    }
+
+    .footer-phone-number {
+        margin-top: 25px;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 27px;
+        text-align: center;
+    
+        color: $text-color-grey-title;
+    }
+
+    .footer-links {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+
+        .footer-link {
+            margin-right: 28px;
+            width: 20px;
+            height: 20px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &.facebook {
+                background: url($img-path + 'facebook.svg') $img-position;
+            }
+
+            &.instagram {
+                background: url($img-path + 'instagram.svg') $img-position;
+            }
+
+            &.twitter {
+                background: url($img-path + 'twitter.svg') $img-position;
+            }
+
+            &.cat {
+                background: url($img-path + 'cat.svg') $img-position;
+            }
+
+            &.ball {
+                background: url($img-path + 'ball.svg') $img-position;
+            }
+        }
+    }
+}

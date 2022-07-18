@@ -11,7 +11,7 @@ body {
     margin: auto;
 }
 
-.card a {
+.nav-link a {
     text-decoration: none;
     font-weight: 400;
     font-size: 14px;
@@ -28,11 +28,11 @@ body {
     margin-right: 0px;
 }
 
-.card {
+.nav-link {
     display: inline-block;
 }
 
-.card a:hover {
+.nav-link a:hover {
    background: #FFBB42;
    color: white;
 }

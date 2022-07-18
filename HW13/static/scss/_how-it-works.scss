@@ -1,0 +1,134 @@
+.how-it-works {
+    padding-top: 146px;
+    width: 100vw;
+    text-align: center;
+
+    .how-it-works-title {
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 43px;
+        text-align: center;
+        text-transform: uppercase;
+    
+        color: $text-color-grey-title;
+    }
+
+    .how-it-works-subtitle {
+        margin-top: 8px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        text-align: center;
+    
+        color: $text-color-grey-title;
+    }
+
+    .steps {
+        position: relative;
+        margin-top: 138px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .step {
+            width: 222px;
+            min-height: 273px;
+            position: relative;
+
+            &::before {
+                content: '';
+                display: block;
+                width: 108px;    
+                height: 108px;
+                position: absolute;
+                top: 46px;
+                left: 58px;
+            }
+
+            .step-title {
+                margin-top: 196px;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 28px;
+                text-align: center;
+                text-transform: uppercase;
+            
+                color: $text-color-grey-title;
+            }
+
+            .step-subtitle {
+                margin-top: 6px;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 15px;
+                text-align: center;
+            
+                color: $text-color-grey;
+            }
+        }
+
+        .step.camera {
+            &::before {
+                background: url($img-path + 'camera_step.svg') $img-position;
+            }
+        }
+
+        .step.globe {
+            &::before {
+                background: url($img-path + 'globe-step.svg') $img-position;
+            }
+        }
+
+        .step.desktop {
+            &::before {
+                background: url($img-path + 'desktop-step.svg') $img-position;
+            }
+        }
+
+        .step.puzzle {
+            &::before {
+                background: url($img-path + 'puzzle-step.svg') $img-position;
+            }
+        }
+
+        .arrow-up-first {
+            width: 160px;
+            height: 25px;   
+            position: absolute;
+            background: url($img-path + 'arrow-up.svg') $img-position;
+            left: 185px;
+            top: 52px;
+        }
+
+        .arrow-up-second {
+            width: 160px;
+            height: 25px;   
+            position: absolute;
+            background: url($img-path + 'arrow-up.svg') $img-position;
+            left: 832px;
+            top: 52px;
+        }
+
+        .arrow-down {
+            width: 160px;
+            height: 25px;   
+            position: absolute;
+            background: url($img-path + 'arrow-down.svg') $img-position;
+            left: 505px;
+            top: 115px;
+        }
+    }
+
+    .how-it-works-btn {
+        padding: $how-it-works-btn-offset;
+        margin-top: 90px;
+    
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+    
+        border: none;
+        color: $text-color-white;
+        background: $color-yellow;
+    }
+}
